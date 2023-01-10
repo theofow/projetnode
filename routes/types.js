@@ -2,7 +2,7 @@ const { Router } = require("express");
 const { Types } = require("../modeles");
 const router = new Router();
 
-// Get collection types
+
 router.get(
     "/types",
     async (req, res) => {
@@ -13,12 +13,12 @@ router.get(
     }
 );
 
-// Get type by id
+
 router.get("/types/:id", async (req, res) => {
-    // Variable(s)
+    
     const type = await Types.findByPk(parseInt(req.params.id));
 
-    // Condition(s)
+    
     if (type) {
         res.json(type);
     } else {
@@ -26,7 +26,7 @@ router.get("/types/:id", async (req, res) => {
     }
 })
 
-// Create type
+
 router.post("/types", async (req, res, next) => {
     try {
         const type = new Types(req.body);
@@ -37,7 +37,7 @@ router.post("/types", async (req, res, next) => {
     }
 })
 
-// Update type
+
 router.put("/types/:id", async (req, res, next) => {
     try {
         const id = parseInt(req.params.id);
@@ -58,7 +58,7 @@ router.put("/types/:id", async (req, res, next) => {
     }
 })
 
-// Delete type
+
 router.delete("/types/:id", async (req, res) => {
     const id = parseInt(req.params.id);
     
