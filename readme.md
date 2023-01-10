@@ -8,7 +8,14 @@ Participants : Théophile RABUT / __theofow__, Anis MAOUCHE / __anismch__, Anaï
 
 Notre projet consiste en la création d'une API en utilisant le language __nodejs__. Ce language est un environnement de temps d'execution issu de JavaScript, très efficace pour le __backend__ d'une application.
 
-Dans le cadre de notre projet, nous allons nous servir de ce language afin de concevoir une API d'un __annulaire__, permettant de récupérer les coordonées d'une personne en entrant un nom / prénom. 
+Dans le cadre de notre projet, nous allons nous servir de ce language afin de concevoir une API d'un __Pokedex__, permettant de récupérer des données sur un pokémon à partir de son numéro.
+> Il sera question de traiter 2 données : 
+>- Nom du Pokémon
+>- Type(s)
+
+## Fonctionnement
+
+À partir du numéro d'un Pokémon, l'__API__ permet de récupérer les données citées précédemment.
 
 ## Précisions 
 
@@ -46,11 +53,12 @@ Entrez la clé __HTTP__ du repository.
 
 ### Windows/MacOS
 
-- Télécharger Node
+- Télécharger __Node__
 
 Node peut s'installer sur internet via [ce lien](https://nodejs.org/en/download/).
 
 ### Linux
+
 ```sh
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 
