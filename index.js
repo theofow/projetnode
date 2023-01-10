@@ -8,6 +8,9 @@ const express = require("express");
 const PORT = process.env.PORT || 3000; // Default: 3000 (use the process.env.PORT else use 3000 by default)
 const app = express();
 
+app.get("/", (req, res) => {
+    res.json("Hello ! ");
+  });
 
 // Listener
 
