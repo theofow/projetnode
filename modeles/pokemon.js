@@ -5,7 +5,7 @@ class Pokemon extends Model {}
 
 Pokemon.init(
     {
-        name: {
+        nom: {
             type: DataTypes.STRING,
             allowNull: false,
         },
@@ -15,8 +15,9 @@ Pokemon.init(
         }
     },
     {
-        sequelize: db_conn,
-        timestamps: false
+        sequelize: connection,
+        timestamps: false,
+        tableName: "pokemon"
     }
 );
 
