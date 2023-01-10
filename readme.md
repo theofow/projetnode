@@ -1,4 +1,6 @@
-# Projet API - NodeJS
+<img src="annexes/img/esilv_logo.png" alt="drawing" width="50"/> 
+
+# Projet API - NodeJS 
 
 ## Introduction au projet
 
@@ -15,8 +17,30 @@ Dans un premier temps, il est nécessaire de mettre en place l'environnement dan
 
 > Nous allons utiliser ici __git__ et __node__.
 
-### Installation de Git
+### Installation de <img src="annexes/img/git_logo.png" alt="drawing" width="30"/>
 
-- Installer git sur l'ordinateur
 
-Sur windows, l'installation peut s'effectuer sur internet via <https://git-scm.com/downloads>
+
+- Télécharger git 
+
+L'installation peut s'effectuer sur internet via <https://git-scm.com/downloads>
+
+<img src="annexes/img/screen_git.png" alt="drawing" width="500"/> 
+
+Une fois le téléchargement terminé, procéder à l'installation.
+
+- Initialiser Git sur VSCode
+
+Pour commencer, il faut cloner le repository github sur l'ordinateur utilisé.
+
+<img src="annexes/img/screen_vscode.png" alt="drawing" width="500"/> 
+
+Entrez la clé __HTTP__ du repository.
+
+### Installation de Node
+
+
+- Télécharger  <img src="annexes/img/node_logo.png" alt="drawing" width="60"/>
+
+Node peut s'installer sur internet via <https://nodejs.org/en/download/>.
+
