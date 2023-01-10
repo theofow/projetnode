@@ -14,7 +14,7 @@ Dans le cadre de notre projet, nous allons nous servir de ce language afin de co
 
 Voici quelques précisions à prendre en compte dans le cadre de ce projet :
 
->- Notre groupe travaille sous __Windows__ uniquement. La documentation ne contient pas les cas de figure pour les autre OS. 
+>- Notre groupe travaille sous __Windows__ uniquement.
 >- Le projet utilise les _paquets npm_ __express__ et __nodemon__
 
 # Mise en place de l'environnement
@@ -24,7 +24,6 @@ Dans un premier temps, il est nécessaire de mettre en place l'environnement dan
 Nous allons utiliser ici `git` et `node`.
 
 ## Installation de <img src="annexes/img/git_logo.png" alt="drawing" width="50"/>
-
 
 
 - Télécharger git 
@@ -45,10 +44,18 @@ Entrez la clé __HTTP__ du repository.
 
 ## Installation de <img src="annexes/img/node_logo.png" alt="drawing" width="75"/>
 
+### Windows/MacOS
 
 - Télécharger Node
 
 Node peut s'installer sur internet via [ce lien](https://nodejs.org/en/download/).
+
+### Linux
+```sh
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+
+sudo apt-get install -y nodejs
+```
 
 # Prérequis
 
