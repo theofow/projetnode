@@ -4,8 +4,7 @@ const bcrypt = require("bcryptjs");
 
 class User extends Model {}
 
-User.init(
-  {
+User.init({
     nom: DataTypes.STRING,
     prenom: DataTypes.STRING,
     email: {
@@ -30,7 +29,8 @@ User.init(
       validate: {
         isIn: [["USER", "ADMIN", "POKEMON"]],
       },
-  },
+    }
+},
   
   {
     sequelize: connection,
