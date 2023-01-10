@@ -27,6 +27,8 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "USER",
+      validate: {
+        isIn: [["USER", "ADMIN", "POKEMON"]],
     },
   },
   {
