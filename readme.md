@@ -8,10 +8,12 @@ Participants : Théophile RABUT / __theofow__, Anis MAOUCHE / __anismch__, Anaï
 
 Notre projet consiste en la création d'une API en utilisant le language __nodejs__. Ce language est un environnement de temps d'execution issu de JavaScript, très efficace pour le __backend__ d'une application.
 
-Dans le cadre de notre projet, nous allons nous servir de ce language afin de concevoir une API d'un __Pokedex__, permettant de récupérer des données sur un pokémon à partir de son numéro.
-> Il sera question de traiter 2 données : 
+Dans le cadre de notre projet, nous allons nous servir de ce language afin de concevoir une API d'un __Pokedex__.
+
+Les données concernant les Pokémons sont :
 >- Nom du Pokémon
->- Type(s)
+>- Type
+>- ID
 
 ## Fonctionnement
 
