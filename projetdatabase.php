@@ -21,3 +21,10 @@ INSERT INTO types (id, nom) VALUES (2, 'Feu');
 INSERT INTO types (id, nom) VALUES (3, 'Eau');
 INSERT INTO types (id, nom) VALUES (4, 'Psy');
 INSERT INTO types (id, nom) VALUES (5, 'Poison');
+
+//région : 
+INSERT INTO `region`(`id`, `nom`) VALUES ('1','Kanto');
+INSERT INTO `region`(`id`, `nom`) VALUES ('2','Johto');
+INSERT INTO `region`(`id`, `nom`) VALUES ('3','Hoenn');
+INSERT INTO `region`(`id`, `nom`) VALUES ('4','Sinnoh');
+INSERT INTO `region`(`id`, `nom`) VALUES ('5','Unys');
