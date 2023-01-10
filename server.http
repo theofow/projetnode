@@ -1,0 +1,10 @@
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "nom": "Rist"
+  "prenom": "fleur"
+  "email": "fleuriste@gmail.com",
+  "motdepasse": "botanique"
+}

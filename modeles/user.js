@@ -6,8 +6,8 @@ class User extends Model {}
 
 User.init(
   {
-    lastname: DataTypes.STRING,
-    firstname: DataTypes.STRING,
+    nom: DataTypes.STRING,
+    prenom: DataTypes.STRING,
     email: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -16,7 +16,7 @@ User.init(
         isEmail: true,
       },
     },
-    password: {
+    motdepasse: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
