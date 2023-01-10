@@ -24,6 +24,7 @@ router.post("/users", (req, res) => {
             res.sendStatus(422);
         });
 });
+
 // Get a specific user
 router.get("/users/:id", async (req, res) => {
   const user = await User.findByPk(parseInt(req.params.id), {
