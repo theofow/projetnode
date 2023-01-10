@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000; // Default: 3000 (use the process.env.POR
 const app = express();
 
 app.get("/", (req, res) => {
-    res.json("Hello ! ");
+    res.json("I play Pokemon go ! ");
   });
 
 // Listener
