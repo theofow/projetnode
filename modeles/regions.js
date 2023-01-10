@@ -5,14 +5,15 @@ class Region extends Model {}
 
 Region.init(
     {
-        name: {
+        nom: {
             type: DataTypes.STRING,
             allowNull: false,
         }
     },
     {
-        sequelize: db_conn,
-        timestamps: false
+        sequelize: connection,
+        timestamps: false,
+        tableName: "region"
     }
 );
 
