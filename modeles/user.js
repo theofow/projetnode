@@ -29,11 +29,12 @@ User.init(
       defaultValue: "USER",
       validate: {
         isIn: [["USER", "ADMIN", "POKEMON"]],
-    },
+      },
   },
+  
   {
     sequelize: connection,
-    timestamps: false,
+    timestamps: false
   }
 );
 
