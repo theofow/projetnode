@@ -3,8 +3,8 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "nom": "Rist"
-  "prenom": "fleur"
+  "nom": "Rist",
+  "prenom": "Fleur",
   "email": "fleuriste@gmail.com",
   "motdepasse": "botanique"
 }

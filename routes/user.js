@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { User } = require("../models");
+const { User } = require("../modeles");
 const router = new Router();
 
 // Get collection users
@@ -14,21 +14,16 @@ router.get(
   }
 );
 
-// Create a new user
-router.post(
-  "/users",
-  async (req, res, next) => {
-    try {
-      const user = new User(req.body);
-      await user.save();
-      res.status(201).json(user);
-    } catch (error) {
-      console.log("Here");
-      next(error);
-    }
-  }
-);
-
+router.post("/users", (req, res) => {
+    const user = new User(req.body);
+    user
+        .save()
+        .then((data) => res.status(201).json(data))
+        .catch((err) => {
+            console.log(err);
+            res.sendStatus(422);
+        });
+});
 // Get a specific user
 router.get("/users/:id", async (req, res) => {
   const user = await User.findByPk(parseInt(req.params.id), {

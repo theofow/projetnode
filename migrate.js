@@ -1,4 +1,4 @@
-const { connection } = require("./models");
+const { connection } = require("./modeles");
 
 connection
   .sync({

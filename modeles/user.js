@@ -31,16 +31,17 @@ User.init(
   },
   {
     sequelize: connection,
+    timestamps: false,
   }
 );
 
 function hashPassword(user) {
-  user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync());
+  user.motdepasse = bcrypt.hashSync(user.motdepasse, bcrypt.genSaltSync());
 }
 
 User.addHook("beforeCreate", hashPassword);
 User.addHook("beforeUpdate", (user, { fields }) => {
-  if (fields.includes("password")) {
+  if (fields.includes("motdepasse")) {
     hashPassword(user);
   }
 });
